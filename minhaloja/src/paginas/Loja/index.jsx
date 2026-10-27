@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import ProdutoCard from "../../componentes/ProdutoCard";
 import "./estilos.css";
 
-const API_URL = "http://localhost:3000/products";
+const API_URL = "http://192.168.100.217:3000/products";
 
 function Loja({ onAdicionarAoCarrinho, quantidadesNoCarrinho }) {
   const [produtos, setProdutos] = useState([]);
