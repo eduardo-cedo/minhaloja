@@ -1,0 +1,140 @@
+.pagina-carrinho {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.pagina-carrinho h1 {
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.carrinho-vazio {
+  padding: 24px;
+  color: #555;
+  text-align: center;
+}
+
+.lista-carrinho {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.item-carrinho img {
+  width: 96px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-carrinho__info {
+  flex: 1;
+}
+
+.item-carrinho__info h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.item-carrinho__info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.item-carrinho__quantidade {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.item-carrinho__quantidade button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.item-carrinho__quantidade button:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.item-carrinho__subtotal {
+  color: #16803c;
+  white-space: nowrap;
+}
+
+.item-carrinho__remover {
+  padding: 8px 12px;
+  border: 1px solid #dc2626;
+  border-radius: 6px;
+  background-color: white;
+  color: #dc2626;
+  cursor: pointer;
+}
+
+.item-carrinho__remover:hover {
+  background-color: #fef2f2;
+}
+
+.resumo-carrinho {
+  margin-top: 24px;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+
+.resumo-carrinho p {
+  margin: 8px 0;
+}
+
+.resumo-carrinho strong {
+  color: #16803c;
+  font-size: 20px;
+}
+
+.resumo-carrinho__finalizar {
+  margin-top: 12px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #16a34a;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resumo-carrinho__finalizar:hover {
+  background-color: #15803d;
+}
+
+@media (max-width: 480px) {
+  .item-carrinho {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .item-carrinho__subtotal {
+    width: 100%;
+    text-align: right;
+  }
+}
